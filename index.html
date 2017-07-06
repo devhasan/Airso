@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+<link href="https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik|VT323" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+<title>Airso Services</title>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" style="font-size: 30px">Airso Services</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active" style="font-size: 1.5em"><a href="#home">Home</a></li>
+      <li style="font-size: 1.5em"><a href="#about">About</a></li>
+      <li style="font-size: 1.5em"><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!--
+<ul class="topnav">
+  <li class="right"><a href="#contact">Contact</a></li>
+  <li class="right"><a href="#about">About</a></li>
+  <li class="right"><a href="#home">Home</a></li>
+</ul>
+
+<div class="w3-center">
+<div class="w3-bar">
+  <a class="w3-button w3-bar-item w3-white w3-border w3-border-black" href="#home">Home</a>
+  <a class="w3-button w3-bar-item w3-white w3-border w3-border-black" href="#about">About</a>
+  <a class="w3-button w3-bar-item w3-white w3-border w3-border-black" href="#contact">Contacts</a>
+</div>
+</div>
+<h1 class="text-center">Airso Services</h1>
+
+<div class="w3-bar w3-red">
+<button class="w3-bar-item w3-button ">Button</button>
+<button class="w3-bar-item w3-button">Button</button>
+<button class="w3-bar-item w3-button">Button</button>
+</div>
+
+<div class=container>
+    <img src="http://onehdwallpaper.com/wp-content/uploads/2015/07/Taj-Mahal-Desktop-HD-Wallpapers.jpg" alt="Taj Mahal" class="mySlides" style="width:100%">
+    <img src="http://www.marystevenshospice.co.uk/wp-content/uploads/2016/10/67471704-great-wall-of-china-wallpaper.jpg" alt="China" class="mySlides" style="width:100%">
+</div>
+-->
+<div class="container" id="home">
+<div class="jumbotron ">
+<div class="w3-container">
+    <div class="text-bg">
+    <h2 class="text-center text-deco w3-animate-opacity" style="margin-bottom:20px">Travel with Airso</h2>
+    </div>
+</div>
+
+<div class="w3-content w3-display-container">
+<a class="w3-btn-floating w3-hover-dark-grey w3-display-left h-margin w3-white" onclick="plusDivs(-1)">&#10094;</a>
+<a class="w3-btn-floating w3-hover-dark-grey w3-display-right h-margin w3-white" onclick="plusDivs(1)">&#10095;</a>
+
+<div class="w3-display-container mySlides w3-animate-opacity">
+  <img src="taj-mahal.jpg" style="width:100%" class="img-responsive smaller-image">
+  <div class="w3-display-middle w3-large w3-container w3-padding-8 w3-text-white">
+    <h1 class="w3-text-shadow">India</h1>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides w3-animate-opacity">
+  <img src="great-wall-of-china.jpg" style="width:100%" class="img-responsive">
+  <div class="w3-display-middle w3-large w3-container w3-padding-8 w3-text-white">
+    <h1 class="w3-text-shadow">China</h1>
+  </div>
+</div>
+</div>
+<div class="text-bg" id="about">
+<h2 class="text-center text-deco w3-animate-opacity" style="margin-top:40px;">About</h2>
+</div>
+<div>
+<p style="margin-top: 30px;">We are the fast and easy way to obtain a travel visa, passport, and other documents for travel anywhere in the world including popular destinations such as China and India.</p>
+</div>
+<div class="text-bg" id="contact">
+<h2 class="text-center text-deco w3-animate-opacity" style="margin-top:40px;">Contact Us</h2>
+</div>
+<div id="google-map" style="margin-top: 30px">
+<p><i class="material-icons icon">phone</i> (773) 997-9406</p>
+<p><i class="material-icons icon">email</i> airsoservices@gmail.com</p>
+<p><i class="material-icons icon">location_on</i> 6352 N Lincoln Ave, Chicago, IL 60659</p>
+<iframe
+    width="600"
+    height="450"
+    frameborder="0" style="width: 100%"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCbvZ0eVxz0dKLuq0Es0csERbGtM9rgeJg
+    &q=6352 N Lincoln Ave, Chicago, IL 60659" allowfullscreen>
+</iframe>
+</div>
+</div>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+</body>
+</html>
